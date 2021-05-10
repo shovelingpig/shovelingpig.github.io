@@ -1,1 +1,2 @@
-# Shoveling Pig's Github Blog
+# shoveling-pig.github.io
+Minchan's Github Blog
