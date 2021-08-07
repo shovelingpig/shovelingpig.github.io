@@ -1,3 +1,3 @@
 # Minchan's Github Blog
 
-[Github Blog Link](https://shoveling-pig.github.io/, "my github blog")
+[Click here to visit my github blog!](https://shoveling-pig.github.io/)
