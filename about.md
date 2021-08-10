@@ -9,7 +9,7 @@ order: 10
 
 My name is Minchan Kim.  
 I’m a machine learning engineer interested in meta learning and transfer learning.  
-Currently I'm working as MLOps Engineer at Scatterlab.  
+Currently I'm working as MLOps Engineer.
  
 * I'm interested in ML and MLOps.
 * My previous tech blog is [Shoveling Pig's Medium Blog][medium-blog]. 
