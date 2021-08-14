@@ -2,7 +2,7 @@
 layout: post
 title:  "[Jekyll Blog] 블로그를 만들어 봅시다!"
 subtitle:   "Let's create a blog"
-categories: dev
+categories: think
 tags: think blog intro   
 comments: true
 ---
