@@ -1,0 +1,12 @@
+---
+layout: post
+title:  "[CV] GAN (Generative Adversarial Network)"
+subtitle:   "생성적 적대 신경망"
+categories: dev
+tags: ml   
+comments: true
+---
+
+
+## 개요
+> 구별할 수 없을 만큼 진짜같은 가짜를 만드는 신경망, GAN을 소개합니다.
