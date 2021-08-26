@@ -9,4 +9,4 @@ comments: true
 
 
 ## 개요
-> Scalability와 Style Diversity 두마리 토끼를 모두 잡은 StarGAN v2를 소개합니다.
+> Scalability와 Style Diversity 두마리 토끼를 모두 잡은 , StarGAN v2를 소개합니다.
