@@ -67,7 +67,7 @@ StarGAN 등 Scalability를 달성한 기존의 모델들은 항상 각 도메인
 
 <img src="/assets/img/post_img/stargan-v2-ds-loss.PNG" width="300" height="60" />
 
-* **Cycle Consistency Loss**: Generator가 이미지의 Identity는 자체는 보존하도록 하는 Loss입니다.
+* **Cycle Consistency Loss**: Generator가 이미지의 고유한 Identity 자체는 보존하도록 하는 Loss입니다.
 
 <img src="/assets/img/post_img/stargan-v2-cyc-loss.PNG" width="300" height="60" />
 
