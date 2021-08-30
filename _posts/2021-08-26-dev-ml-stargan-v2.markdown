@@ -30,7 +30,7 @@ comments: true
 * **Identity**: I2I 변환 과정에서도 바뀌지 않는 `특정 이미지가 지닌 고유한 특성`을 의미합니다. 주로 이미지 내의 주요한 경계선들이 Identity에 해당되며, 인물 사진의 경우 얼굴의 형태나 자세 등이 주로 Identity로 분류됩니다. 비교적 그 정의가 모호한 편입니다.
 * **AdaIN**: Adaptive Instance Normalization의 약자이다. AdaIN(x, s)는 x를 정규화한 뒤 s를 기준으로 다시 역정규화하여 x의 분포를 s의 분포로 변환하는 정규화 과정을 의미한다. 수식은 아래와 같다.
 
-<img src="/assets/img/post_img/stargan-v2-adain.PNG" width="200" height="100" />
+<img src="/assets/img/post_img/stargan-v2-adain.PNG" width="300" height="100" />
 
 
 ## 배경
@@ -47,29 +47,29 @@ comments: true
 
 ## 제안된 신경망 구조
 
-<img src="/assets/img/post_img/stargan-v2-architecture.PNG" width="500" height="500" />
+<img src="/assets/img/post_img/stargan-v2-architecture.PNG" width="800" height="500" />
 
 ## 해결방안을 도입한 근거
 ---
 * **Adversarial Loss**: Generator가 더 진짜같은 이미지를 생성하도록 하는 Loss입니다.
 
-<img src="/assets/img/post_img/stargan-v2-adv-loss.PNG" width="200" height="100" />
+<img src="/assets/img/post_img/stargan-v2-adv-loss.PNG" width="300" height="100" />
 
 * **Style Reconstruction Loss**: Generator가 이미지 생성에 Style Code를 활용하도록 강제하는 Loss입니다.
 
-<img src="/assets/img/post_img/stargan-v2-sty-loss.PNG" width="200" height="100" />
+<img src="/assets/img/post_img/stargan-v2-sty-loss.PNG" width="300" height="100" />
 
 * **Style Diversification Loss**: Generator가 더 다양한 Style의 이미지를 생성하도록 Image Space를 돌아다니게 만드는 Loss입니다.
 
-<img src="/assets/img/post_img/stargan-v2-ds-loss.PNG" width="200" height="100" />
+<img src="/assets/img/post_img/stargan-v2-ds-loss.PNG" width="300" height="100" />
 
 * **Cycle Consistency Loss**: Generator가 이미지의 Identity는 자체는 보존하도록 하는 Loss입니다.
 
-<img src="/assets/img/post_img/stargan-v2-cyc-loss.PNG" width="200" height="100" />
+<img src="/assets/img/post_img/stargan-v2-cyc-loss.PNG" width="300" height="100" />
 
 * **Full Objective**
 
-<img src="/assets/img/post_img/stargan-v2-full-objective.PNG" width="200" height="100"/>
+<img src="/assets/img/post_img/stargan-v2-full-objective.PNG" width="300" height="200"/>
 
 
 ## 성과
@@ -84,11 +84,11 @@ StarGAN v2는 다음과 같은 4가지 장점을 가지고 있습니다,
 
 StarGAN v2는 Celeb-HQ 데이터셋과 AFHQ 데이터셋에 대한 `정량적인 평가(FID, LPIPS)`와 `정성적인 평가(AMT)` 결과, 기존의 다른 모델들보다 생성된 **이미지의 질(Visual Quality)**, **스타일의 다양성(Diversity)**, **다중 도메인으로의 확장 가능성(Scalability)** 측면에서 상대적으로 성능이 우수했습니다. 여기서 FID(Frechet Inception Distance)는 진짜 이미지들의 분포와 생성된 이미지들의 분포 사이의 거리를 의미하고, LPIPS(Learned Perceptual Image Patch Similarity)는 생성된 이미지의 다양성을을 의미합니다. AMT는 Amazon Turk라는 설문 기관에 조사를 의뢰하여 사람이 직접 Visual Quality가 좋고 Reference Image와 스타일이 비슷한 사진을 고르는 방식으로 평가한 정성적 성능 지표입니다.
 
-<img src="/assets/img/post_img/stargan-v2-eval1.PNG" width="200" height="100"/>
+<img src="/assets/img/post_img/stargan-v2-eval1.PNG" width="400" height="200"/>
 
-<img src="/assets/img/post_img/stargan-v2-eval2.PNG" width="200" height="100"/>
+<img src="/assets/img/post_img/stargan-v2-eval2.PNG" width="400" height="200"/>
 
-<img src="/assets/img/post_img/stargan-v2-eval3.PNG" width="200" height="100"/>
+<img src="/assets/img/post_img/stargan-v2-eval3.PNG" width="400" height="200"/>
 
 ## 한계
 ---
