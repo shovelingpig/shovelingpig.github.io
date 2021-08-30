@@ -35,7 +35,7 @@ comments: true
 
 ## 배경
 ---
-좋은 I2I 변환 모델은 Scalability와 Style Diversity를 모두 갖춘 모델입니다. 여기서 `Scalability`란 단일 신경망을 활용해 다중 도메인 간의 I22 변환을 수행할 수 있는 특성을 의미하고, `Style Diversity`란 각각의 도메인 내에서도 다양한 스타일의 이미지를 생성할 수 있는 특성을 의미합니다. 즉 좋은 I2I 변환 모델의 요건을 충족하기 위해서는 다양한 이미지를 생성할 수 있어야하고, 여러 도메인들로 자유롭게 확장할 수 있어야 합니다. MWGAN이나 StyleGAN 등 Style Diversity를 달성한 모델들은 단일 신경망으로 다중 도메인 간 I2I 변환을 할 수 없는 Scalability의 한계가 있었습니다. 다중 도메인 간 I2I 변환을 하기 위해서는 각기 다른 도메인 쌍에 대해서 학습시킨 여러 신경망을 활용해야 했습니다. K개의 도메인 간에 I2I 변환을 위해서는 K(K-1)개의 생성 모델이 필요했습니다.  그리고 StarGAN 등 Scalability를 달성한 모델들은 항상 각 도메인당 동일한 Output을 생성하는 Style Diversity의 한계가 있었습니다. 사전에 정의된 도메인 라벨을 One Hot Vector 형식으로 활용했기 때문에 모델이 각 도메인당 결정론적 매핑을 학습하여 같은 소스 이미지에 대해서는 각 도메인당 하나의 동일한 Output만을 생성했습니다. 이처럼 **기존에도 Scalability와 Style Diversity 중 하나를 갖춘 모델은 존재했으나, 이 둘을 모두 갖춘 모델은 없는 상황**이었습니다.
+**좋은 I2I 변환 모델은 Scalability와 Style Diversity를 모두 갖춘 모델**입니다. 여기서 `Scalability`란 단일 신경망을 활용해 다중 도메인 간의 I22 변환을 수행할 수 있는 특성을 의미하고, `Style Diversity`란 각각의 도메인 내에서도 다양한 스타일의 이미지를 생성할 수 있는 특성을 의미합니다. 즉 좋은 I2I 변환 모델의 요건을 충족하기 위해서는 다양한 이미지를 생성할 수 있어야하고, 여러 도메인들로 자유롭게 확장할 수 있어야 합니다. MWGAN이나 StyleGAN 등 Style Diversity를 달성한 모델들은 단일 신경망으로 다중 도메인 간 I2I 변환을 할 수 없는 Scalability의 한계가 있었습니다. 다중 도메인 간 I2I 변환을 하기 위해서는 각기 다른 도메인 쌍에 대해서 학습시킨 여러 신경망을 활용해야 했습니다. K개의 도메인 간에 I2I 변환을 위해서는 K(K-1)개의 생성 모델이 필요했습니다.  그리고 StarGAN 등 Scalability를 달성한 모델들은 항상 각 도메인당 동일한 Output을 생성하는 Style Diversity의 한계가 있었습니다. 사전에 정의된 도메인 라벨을 One Hot Vector 형식으로 활용했기 때문에 모델이 각 도메인당 결정론적 매핑을 학습하여 같은 소스 이미지에 대해서는 각 도메인당 하나의 동일한 Output만을 생성했습니다. 이처럼 **기존에도 Scalability와 Style Diversity 중 하나를 갖춘 모델은 존재했으나, 이 둘을 모두 갖춘 모델은 없는 상황**이었습니다.
 
 ## 저자가 해결하고자 하는 문제
 ---
@@ -100,6 +100,6 @@ StarGAN v2는 Celeb-HQ 데이터셋과 AFHQ 데이터셋에 대한 `정량적인
 * StarGAN v2에 MMW Distance(Multi-marginal Wasserstein Distance)를 적용할 수는 없을까?
 * FID와 LPIPS가 각각 Visual Quality와 Diversity를 평가하기에 가장 적절한 지표일까?
 * Reference Image를 이용한 이미지 합성을 통해 만들 수 있는 성형, 미용, 패션, 예술 등의 분야의 재밌는 프로덕트는 없을까? (예를 들어 고객이 자신이 좋아하는 연예인의 사진을 Reference Image로 입력하면 특정 부위 성형 후 고객의 얼굴을 생성해주는 모델을 만들 수는 없을까?)
-* Style/Domain/Identity의 정의가 애매하지 않나?
+* 본 논문에서 정의하고 있는 Style과 Identity의 정의에 모호한 측면이 있다. 더 수학적으로 엄밀히 정의할 수는 없을까? 
 * 이미지 속 다양한 Attribute 집합의 Combination 중에서 특정 Combination을 선택하여 각각을 Style, Domain, Identity로 설정할 수는 없을까?
 * 선택적인 데이터 라벨링을 통해서만 이러한 구분을 설정할 수 있는 걸까? 모델링 구조를 통해서 이러한 구분을 하이퍼파라미터로 더 유연하게 설정할수는 없을까? (예를 들어 특정 연예인의 코로 성형한 내 모습을 보고 싶으면 코의 모양만을 Identity에서 제외시키고 Style로 포함시킬 수는 없을까?)
