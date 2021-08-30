@@ -71,7 +71,7 @@ StarGAN 등 Scalability를 달성한 기존의 모델들은 항상 각 도메인
 
 <img src="/assets/img/post_img/stargan-v2-cyc-loss.PNG" width="300" height="60" />
 
-* **Full Objective**
+* **Full Objective**: 최종적인 Loss Function은 다음과 같습니다.
 
 <img src="/assets/img/post_img/stargan-v2-full-objective.PNG" width="300" height="120"/>
 
