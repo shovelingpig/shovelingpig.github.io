@@ -57,19 +57,19 @@ comments: true
 
 * **Style Reconstruction Loss**: Generator가 이미지 생성에 Style Code를 활용하도록 강제하는 Loss입니다.
 
-<img src="/assets/img/post_img/stargan-v2-sty-loss.PNG" width="300" height="100" />
+<img src="/assets/img/post_img/stargan-v2-sty-loss.PNG" width="250" height="100" />
 
 * **Style Diversification Loss**: Generator가 더 다양한 Style의 이미지를 생성하도록 Image Space를 돌아다니게 만드는 Loss입니다.
 
-<img src="/assets/img/post_img/stargan-v2-ds-loss.PNG" width="300" height="100" />
+<img src="/assets/img/post_img/stargan-v2-ds-loss.PNG" width="250" height="100" />
 
 * **Cycle Consistency Loss**: Generator가 이미지의 Identity는 자체는 보존하도록 하는 Loss입니다.
 
-<img src="/assets/img/post_img/stargan-v2-cyc-loss.PNG" width="300" height="100" />
+<img src="/assets/img/post_img/stargan-v2-cyc-loss.PNG" width="250" height="100" />
 
 * **Full Objective**
 
-<img src="/assets/img/post_img/stargan-v2-full-objective.PNG" width="300" height="200"/>
+<img src="/assets/img/post_img/stargan-v2-full-objective.PNG" width="250" height="200"/>
 
 
 ## 성과
