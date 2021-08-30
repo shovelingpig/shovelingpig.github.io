@@ -81,10 +81,10 @@ StarGAN 등 Scalability를 달성한 기존의 모델들은 항상 각 도메인
 StarGAN v2를 이용하면 Latent Code를 Mapping Network에 넣어 생성한 Style Code나 Style Encoder를 통해 Reference Image에서 추출한 Style Code를 통해 특정한 스타일의 이미지를 생성할 수 있습니다. (Mapping Network를 이용한 생성 방식을 `Latent-guided Synthesis`, Style Encoder를 이용한 생성 방식을 `Reference-guided Synthesis`라고 부릅니다.)
 
 StarGAN v2는 다음과 같은 4가지 장점을 가지고 있습니다,
-1) 도메인에 대한 정보가 이미 Mapping Network를 통해 Style Code에 반영되어 있어서 Generator가 오직 Style Code에만 집중할 수 있습니다.
-2) StyleGAN처럼 Style Space가 고정되어있지 않고 학습에 의해 유연하게 얻어집니다.
-3) 다중 도메인으로부터 훈련 데이터를 모두 활용할 수 있습니다. 이 과정을 통해 Domain-invariant한 특징들을 더 잘 학습할 수 있고 Regularization Effect로 인해 처음 보는 샘플에 대해서도 더 좋은 일반화 성능을 나타냅니다.
-4) Domain-shared Style Code 대신 Domain-specific Style Code를 사용함으로써 더욱 다양한 Output을 생성할 수 있습니다. Domain이 n개, Style이 k개라면 전자는 총 k개의 Combination이 가능한 반면 후자는 n*k개의 Combination이 가능하기 때문입니다.
+1. 도메인에 대한 정보가 이미 Mapping Network를 통해 Style Code에 반영되어 있어서 Generator가 오직 Style Code에만 집중할 수 있습니다.
+2. StyleGAN처럼 Style Space가 고정되어있지 않고 학습에 의해 유연하게 얻어집니다.
+3. 다중 도메인으로부터 훈련 데이터를 모두 활용할 수 있습니다. 이 과정을 통해 Domain-invariant한 특징들을 더 잘 학습할 수 있고 Regularization Effect로 인해 처음 보는 샘플에 대해서도 더 좋은 일반화 성능을 나타냅니다.
+4. Domain-shared Style Code 대신 Domain-specific Style Code를 사용함으로써 더욱 다양한 Output을 생성할 수 있습니다. Domain이 n개, Style이 k개라면 전자는 총 k개의 Combination이 가능한 반면 후자는 n*k개의 Combination이 가능하기 때문입니다.
 
 StarGAN v2는 Celeb-HQ 데이터셋과 AFHQ 데이터셋에 대한 `정량적인 평가(FID, LPIPS)`와 `정성적인 평가(AMT)` 결과, 기존의 다른 모델들보다 생성된 **이미지의 질(Visual Quality)**, **스타일의 다양성(Diversity)**, **다중 도메인으로의 확장 가능성(Scalability)** 측면에서 상대적으로 성능이 우수했습니다. 여기서 FID(Frechet Inception Distance)는 진짜 이미지들의 분포와 생성된 이미지들의 분포 사이의 거리를 의미하고, LPIPS(Learned Perceptual Image Patch Similarity)는 생성된 이미지의 다양성을을 의미합니다. AMT는 Amazon Turk라는 설문 기관에 조사를 의뢰하여 사람이 직접 Visual Quality가 좋고 Reference Image와 스타일이 비슷한 사진을 고르는 방식으로 평가한 정성적 성능 지표입니다.
 
