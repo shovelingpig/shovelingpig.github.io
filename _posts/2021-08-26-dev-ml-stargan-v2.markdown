@@ -69,7 +69,7 @@ comments: true
 
 * **Full Objective**
 
-<img src="/assets/img/post_img/stargan-v2-full-objective.PNG" width="300" height="150"/>
+<img src="/assets/img/post_img/stargan-v2-full-objective.PNG" width="300" height="120"/>
 
 
 ## 성과
