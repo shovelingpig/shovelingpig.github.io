@@ -51,7 +51,7 @@ StarGAN 등 Scalability를 달성한 기존의 모델들은 항상 각 도메인
 
 ## 제안된 신경망 구조
 
-<img src="/assets/img/post_img/stargan-v2-architecture.PNG" width="800" height="450" />
+<img src="/assets/img/post_img/stargan-v2-architecture.PNG" width="800" height="400" />
 
 ## 해결방안을 도입한 근거
 ---
