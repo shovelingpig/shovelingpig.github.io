@@ -7,9 +7,9 @@ order: 10
 
 ## Introduction
 
-Hellow. My name is Minchan Kim.  
-I am studying **Computer science** and **Business** at Seoul National Univ.  
-I am a **machine learning engineer** interested in **meta learning** and **transfer learning**.  
+Hi there! My name is Minchan Kim.  
+I'm studying **Computer science** and **Business** at Seoul National Univ.  
+I'm a **machine learning engineer** interested in **meta learning** and **transfer learning**.  
 Currently I'm looking for an opportunity to work as a skilled industrial personnel.
  
 * I'm interested in ML and MLOps.
