@@ -105,7 +105,7 @@ StarGAN v2는 Celeb-HQ 데이터셋과 AFHQ 데이터셋에 대한 `정량적인
 * StarGAN v2에 MMW Distance(Multi-marginal Wasserstein Distance)를 적용할 수는 없을까?
 * FID와 LPIPS가 각각 Visual Quality와 Diversity를 평가하기에 가장 적절한 지표일까?
 * 어떤 논리와 근거로 논문의 저자들은 Domain-specific Style Code가 Domain-shared Style Code보다 더 Output Diversity가 높다고 주장하고 있는 걸까?
-* Reference Image를 이용한 이미지 합성을 통해 만들 수 있는 성형, 미용, 패션, 예술 등의 분야의 재밌는 프로덕트는 없을까? (예를 들어 고객이 자신이 좋아하는 연예인의 사진을 Reference Image로 입력하면 특정 부위 성형 후 고객의 얼굴을 생성해주는 모델을 만들 수는 없을까?)
+* Reference Image를 이용한 이미지 합성을 통해 만들 수 있는 성형, 미용, 패션, 예술 등의 분야의 재밌는 프로덕트는 없을까? (예를 들어 고객이 자신이 좋아하는 연예인의 사진을 Reference Image로 입력하면 고객 얼굴의 특정 부분을 해당 연예인처럼 성형한 후의 추정 얼굴을 생성해주는 모델을 만들 수는 없을까?)
 * 본 논문에서 정의하고 있는 Style과 Identity의 정의에 모호한 측면이 있다. 더 수학적으로 엄밀히 정의할 수는 없을까? 내 생각은 다음과 같다. Domain은 시각적으로 구분할 수 있는 하나의 카테고리로 묶일 수 있는 이미지들의 집합이다. Domain을 시각적으로 구분할 수 있도록 하는 특징들을 Domain의 Feature Set이라고 하자. Identity는 학습 과정에서 Cycle Consistency Loss를 통해 보존되는 Feature Set이다. Cycle Consistency Loss를 학습에 적용하는 방식에 따라 Identity를 유동적으로 변경할 수 있다. Style은 특정 이미지의 전체 Feature Set에서 Identity와 Domain의 Feature Set을 제외한 차집합이다. 따라서 Domain과 Identity를 어떻게 설정하느냐에 따라서 Style의 범위 또한 바뀐다. 마지막으로 Domain-specific Style Code란 Style에 Domain의 Feature Set에 대한 정보를 합한 벡터이다. 
 * 이미지 속 다양한 Feature들의 Combination 중에서 특정 Combination을 선택하여 각각을 Style, Domain, Identity로 설정할 수는 없을까?
 * 선택적인 데이터 라벨링을 통해서만 이러한 구분을 설정할 수 있는 걸까? 모델링 구조를 통해서 이러한 구분을 하이퍼파라미터로 더 유연하게 설정할수는 없을까? (예를 들어 특정 연예인의 코로 성형한 내 모습을 보고 싶으면 코의 모양만을 Identity에서 제외시키고 Style로 포함시킬 수는 없을까?)
