@@ -102,7 +102,7 @@ StarGAN v2는 Celeb-HQ 데이터셋과 AFHQ 데이터셋에 대한 `정량적인
 
 ## 궁금한 점
 ---
-* StarGAN v2에 MMW Distance(Multi-marginal Wasserstein Distance)를 적용할 수는 없을까?
+* StarGAN v2에 MWGAN의 MMW Distance(Multi-marginal Wasserstein Distance)를 적용해볼 수는 없을까?
 * FID와 LPIPS가 각각 Visual Quality와 Diversity를 평가하기에 가장 적절한 지표일까?
 * 어떤 논리와 근거로 논문의 저자들은 Domain-specific Style Code가 Domain-shared Style Code보다 더 Output Diversity가 높다고 주장하고 있는 걸까?
 * 미용, 성형, 패션, 예술 등의 분야에서 Reference-guided 이미지 합성을 통해 만들 수 있는 상용화 가능성이 있는 프로덕트는 없을까? 예를 들어 미용 분야에서는 고객이 자신이 원하는 헤어스타일의 인물 사진을 Reference Image로 입력하면 그 헤어스타일을 한 고객의 모습을 생성해주는 모델을 만들 수 있다. 또 성형 분야에서는 고객이 자신이 좋아하는 연예인의 사진을 Reference Image로 입력하면 고객 얼굴의 특정 부분을 해당 연예인처럼 성형한 후의 추정 얼굴을 생성해주는 모델을 만들 수도 있다. 패션 분야에서는 유명 디자이너가 만든 가방 사진을 Reference Image로 입력하면 비슷한 스타일의 지갑 디자인을 생성해주는 모델도 생각해볼 수 있다.
