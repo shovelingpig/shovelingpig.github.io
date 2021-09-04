@@ -12,11 +12,11 @@ minchan:
 
   # This photo will be used in the about section
   picture:
-    src:             /assets/img/my_profile_image.png
+    src:             /assets/img/profile_hq_circle.png
     # srcset is optional, but can be used to provide higher res versions for retina displays
     srcset:
-      1x:            /assets/img/my_profile_image.png
-      2x:            /assets/img/my_profile_image.png
+      1x:            /assets/img/profile_hq_circle.png
+      2x:            /assets/img/profile_hq_circle.png
 
   # Social media icons in sidebar
   # Comment/uncommet to show/hide
