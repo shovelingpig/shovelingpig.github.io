@@ -9,7 +9,7 @@ order: 10
 
 Hi there! My name is Minchan Kim.  
 I'm studying **Computer science** and **Business** at Seoul National Univ.  
-I'm a **machine learning engineer** interested in **meta learning** and **transfer learning**.  
+I'm a **AI Research Scientist** interested in **meta learning** and **transfer learning**.  
 Currently I'm looking for an opportunity to work as a skilled industrial personnel.
  
 * I'm interested in ML and MLOps.
