@@ -11,9 +11,6 @@ comments: true
 ## 개요
 > Scalability와 Style Diversity 두마리 토끼를 모두 잡은 생성 모델, StarGAN v2를 소개합니다.
 
-[Paper](https://arxiv.org/abs/1912.01865)
-[Official Implementation](https://github.com/clovaai/stargan-v2)
-
 - 목차
 	- [용어 정리](#용어-정리)  
 	- [배경](#배경)  
@@ -24,6 +21,13 @@ comments: true
 	- [성과](#성과)
 	- [한계](#한계)
 	- [궁금한 점](#궁금한-점)
+
+## Paper & Implementation
+---
+[Paper](https://arxiv.org/abs/1912.01865)
+
+[Official Implementation](https://github.com/clovaai/stargan-v2)
+
 
 ## 용어 정리
 ---
