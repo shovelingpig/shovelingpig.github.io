@@ -22,6 +22,12 @@ comments: true
 	- [한계](#한계)
 	- [궁금한 점](#궁금한-점)
 
+## 원본 논문
+---
+[Paper](https://arxiv.org/abs/1406.2661)
+
+[Official Implementation](https://github.com/goodfeli/adversarial)
+
 ## 용어 정리
 ---
 (TBD)
