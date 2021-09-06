@@ -22,7 +22,7 @@ comments: true
 	- [한계](#한계)
 	- [궁금한 점](#궁금한-점)
 
-## Paper & Implementation
+## 원본 논문
 ---
 [Paper](https://arxiv.org/abs/1912.01865)
 
