@@ -12,7 +12,7 @@ comments: true
 > 단일 신경망으로 다중 도메인간 변환이 가능한 모델인 StarGAN을 소개합니다.
 
 - 목차
-	- [원본 논문](#원본 논문)  
+	- [원본 논문](#원본-논문)  
 	- [용어 정리](#용어-정리)  
 	- [배경](#배경)  
 	- [저자가 해결하고자 하는 문제](#저자가-해결하고자-하는-문제)
@@ -48,7 +48,7 @@ comments: true
 ## 제안된 신경망 구조
 ---
 
-<img src="/assets/img/post_img/stargan_architecture.PNG" width="830" height="450" />
+<img src="/assets/img/post_img/stargan_architecture.PNG" width="830" height="400" />
 
 ## 해결방안을 도입한 근거
 ---
