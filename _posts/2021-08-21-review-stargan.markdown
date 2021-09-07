@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "[CV] StarGAN: Unified Generative Adversarial Networks for Multi-Domain Image-to-Image Translation"
+title:  "[Paper Review] StarGAN: Unified Generative Adversarial Networks for Multi-Domain Image-to-Image Translation"
 subtitle:   "StarGAN"
-categories: dev
-tags: ml   
+categories: review
+tags: review
 comments: true
 ---
 
