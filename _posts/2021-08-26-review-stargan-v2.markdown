@@ -12,6 +12,7 @@ comments: true
 > Scalability와 Style Diversity 두마리 토끼를 모두 잡은 생성 모델, StarGAN v2를 소개합니다.
 
 - 목차
+	- [원본 논문](#원본 논문)  
 	- [용어 정리](#용어-정리)  
 	- [배경](#배경)  
 	- [저자가 해결하고자 하는 문제](#저자가-해결하고자-하는-문제)
@@ -21,6 +22,7 @@ comments: true
 	- [성과](#성과)
 	- [한계](#한계)
 	- [궁금한 점](#궁금한-점)
+
 
 ## 원본 논문
 ---
@@ -48,18 +50,22 @@ MWGAN이나 StyleGAN 등 Style Diversity를 달성한 기존의 모델들은 단
 
 StarGAN 등 Scalability를 달성한 기존의 모델들은 항상 각 도메인당 동일한 Output을 생성하는 Style Diversity의 한계가 있었습니다. 사전에 정의된 도메인 라벨을 One Hot Vector 형식으로 활용했기 때문에, 모델이 각 도메인당 결정론적 매핑을 학습하여 같은 소스 이미지에 대해서는 각 도메인당 하나의 동일한 Output만을 생성했습니다. 이처럼 **기존에도 Scalability와 Style Diversity 중 하나를 갖춘 모델은 존재했으나, 이 둘을 모두 갖춘 모델은 없는 상황**이었습니다.
 
+
 ## 저자가 해결하고자 하는 문제
 ---
 본 논문의 저자들은 다중 도메인으로 확장 가능할뿐만 아니라 다양한 스타일의 이미지를 생성할 수 있는 `Scalability와 Style Diversity를 모두 갖춘 신경망`을 만들고자 했습니다.
+
 
 ## 문제 해결을 위해 도입한 방법론
 ---
 본 논문의 저자들은 Scalability를 갖춘 StarGAN에서 **Domain Label을 Style Code로 대체**하여 Style Diversity를 함께 달성하고자 했습니다. 여기서 Style Code란 이미지의 스타일이 임베딩된 벡터를 의미합니다. 본 논문에서는 임의의 Gaussian Noise를 Style code로 변환하는 과정을 학습하는 `Mapping Network`와 주어진 Reference Image에서 Style Code를 추출하는 과정을 학습하는 `Style Encoder`를 활용하여, 기존의 고정된 Domain Label을 다양한 스타일을 표현할 수 있는 Domain-specific Style Code로 대체했습니다.  이 외에도 R1 Regularization을 수행하고 Depth-wise Concatenation 대신 AdaIN 방식으로 Style을 Generator에 주입하여 학습 안정성을 개선하는 방법을 사용했습니다.
 
+
 ## 제안된 신경망 구조
 ---
 
 <img src="/assets/img/post_img/stargan-v2-architecture.PNG" width="830" height="350" />
+
 
 ## 해결방안을 도입한 근거
 ---
@@ -102,10 +108,12 @@ StarGAN v2는 Celeb-HQ 데이터셋과 AFHQ 데이터셋에 대한 `정량적인
 
 <img src="/assets/img/post_img/stargan-v2-eval3.PNG" width="400" height="200"/>
 
+
 ## 한계
 ---
 * **학습 속도가 느립니다.** 본 논문에 의하면 100K Iteration 학습을 수행하는데 1개의 Tesla V100 GPU를 이용하여 3일이 걸렸습니다. Inference에 소요되는 시간도 상대적으로 길어서 상용화된 제품에 활용하기 위해서는 Pruning 등의 경량화 과정이 필요합니다.
 * 기존의 생성 모델들보다 더 다양한 스타일의 분포를 학습하긴 하지만 **여전히 모든 스타일에 대한 전체적인 분포는 학습하지는 못합니다.**
+
 
 ## 궁금한 점
 ---
