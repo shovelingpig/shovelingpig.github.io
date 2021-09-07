@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "[CV] GAN: Generative Adversarial Network"
+title:  "[Paper Review] GAN: Generative Adversarial Network"
 subtitle:   "GAN"
-categories: dev
-tags: ml   
+categories: review
+tags: review   
 comments: true
 ---
 
