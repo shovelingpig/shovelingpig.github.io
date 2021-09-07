@@ -47,7 +47,7 @@ comments: true
 ## 제안된 신경망 구조
 ---
 
-<img src="/assets/img/post_img/stargan_architecture.PNG" width="830" height="350" />
+<img src="/assets/img/post_img/stargan_architecture.PNG" width="830" height="450" />
 
 ## 해결방안을 도입한 근거
 ---
