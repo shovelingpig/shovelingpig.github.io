@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "[CV] StarGAN v2: Diverse Image Synthesis for Multiple Domains"
+title:  "[Paper Review] StarGAN v2: Diverse Image Synthesis for Multiple Domains"
 subtitle:   "StarGAN v2"
-categories: dev
-tags: ml   
+categories: review
+tags: review   
 comments: true
 ---
 
