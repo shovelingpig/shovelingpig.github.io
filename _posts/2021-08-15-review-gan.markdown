@@ -48,7 +48,7 @@ comments: true
 ## 제안된 신경망 구조
 ---
 
-<img src="/assets/img/post_img/gan_architecture.png" width="800" height="450" />
+<img src="/assets/img/post_img/gan_architecture.png" width="800" height="350" />
 
 ## 해결방안을 도입한 근거
 ---
