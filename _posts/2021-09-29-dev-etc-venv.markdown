@@ -8,16 +8,16 @@ comments: true
 ---
 
 
-## 개요
+## Summary
 > venv is a tool to create isolated Python environments.
   
-- 목차
-    - [가상 환경 생성](#가상-환경-생성) 
-    - [가상 환경 활성화](#가상-환경-활성화)
-    - [가상 환경 비활성화](#가상-환경-비활성화)
+- Index
+    - [Create virtual environment](#Create-virtual-environment) 
+    - [Activate virtual environment](#Activate-virtual-environment)
+    - [Deactivate virtual environment](#Deactivate-virtual-environment)
 
 
-## 가상 환경 생성
+## Create virtual environment
 ```bash
 python -m venv .venv
 
@@ -25,13 +25,13 @@ echo '.venv' >> .gitignore
 ```
 
 
-## 가상 환경 활성화
+## Activate virtual environment
 ```bash
 source .venv/bin/activate
 ```
 
 
-## 가상 환경 비활성화
+## Deactivate virtual environment
 ```bash
 deactivate
 ```
