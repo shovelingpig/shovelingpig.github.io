@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "[Computer Science] Functional Programming"
-subtitle:   "P"
+subtitle:   "FP"
 categories: dev
 tags: dev etc   
 comments: true
