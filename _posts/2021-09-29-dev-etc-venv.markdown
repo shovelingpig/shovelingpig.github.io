@@ -18,9 +18,20 @@ comments: true
 
 
 ## 가상 환경 생성
+```bash
+python -m venv .venv
+
+echo '.venv' >> .gitignore
+```
 
 
 ## 가상 환경 활성화
+```bash
+source .venv/bin/activate
+```
 
 
 ## 가상 환경 비활성화
+```bash
+deactivate
+```
