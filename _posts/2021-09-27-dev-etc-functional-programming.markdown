@@ -8,10 +8,10 @@ comments: true
 ---
 
 
-## Summary
+## 요약
 > Functional programming is a programming paradigm where programs are constructed by applying and composing functions.
   
-- Index
+- 
     - [함수형 프로그래밍이란](#함수형-프로그래밍이란) 
     - [함수형 프로그래밍의 특징](#함수형-프로그래밍의-특징)
     - [부수 효과란](#부수-효과란)
