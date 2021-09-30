@@ -26,6 +26,7 @@ comments: true
 ## 원본 논문
 ---
 [Paper](https://arxiv.org/abs/1406.2661)
+[Highlighted Paper](https://getliner.com/file/pdf/7KSJKWBMZ1TAR79K620QF8N04W)
 
 [Official Implementation](https://github.com/goodfeli/adversarial)
 
