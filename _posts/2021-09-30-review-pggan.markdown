@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "[Paper Review] Multi-marginal Wasserstein GAN"
-subtitle:   "MWGAN"
+title:  "[Paper Review] PGGAN: Progressive Growing of GANs for Improved Quality, Stability, and Variation"
+subtitle:   "PGGAN"
 categories: review
 tags: review   
 comments: true
@@ -9,7 +9,7 @@ comments: true
 
 
 ## 개요
-> MWGAN을 소개합니다.
+> PGGAN을 소개합니다.
 
 - 목차
 	- [원본 논문](#원본-논문)  
@@ -25,7 +25,7 @@ comments: true
 
 ## 원본 논문
 ---
-[Paper](https://arxiv.org/abs/1911.00888)
+[Paper](https://arxiv.org/abs/1710.10196)
 
 ## 용어 정리
 ---
