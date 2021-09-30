@@ -27,7 +27,7 @@ comments: true
 ---
 [Paper](https://arxiv.org/abs/1406.2661)
 
-[Highlighted Paper](https://getliner.com/file/pdf/7KSJKWBMZ1TAR79K620QF8N04W)
+[Highlighted Paper (Auth Required)](https://getliner.com/file/pdf/7KSJKWBMZ1TAR79K620QF8N04W)
 
 [Official Implementation](https://github.com/goodfeli/adversarial)
 
