@@ -26,7 +26,8 @@ Example Decimal Number = 24.3125
 
 ## Convert the integer part
 
-24 / 2 = 12
+`24 / 2 = 12`
+
 remainder = **0**
 
 12 / 2 = 6
