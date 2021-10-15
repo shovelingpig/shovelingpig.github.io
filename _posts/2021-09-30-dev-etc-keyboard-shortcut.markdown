@@ -44,7 +44,15 @@ comments: true
 
 
 ## macOS
-(TBD)
+
+### 현재 커서의 오른쪽 영역(왼쪽 영역) 선택
+`⌘ + ⇧ + →`
+
+### 현재 커서에서 특정 단위 선택
+`⌥ + ⇧ + →`
+
+### 참고 자료
+[Reference](https://velog.io/@solmii/VScode-%EB%8B%A8%EC%B6%95%ED%82%A4-%EB%BD%80%EA%B0%9C%EA%B8%B0-MAC)
 
 
 ## Linux
