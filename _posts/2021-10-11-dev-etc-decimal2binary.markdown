@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[CS] Decimal to binary conversion"
+title:  "[Computer Science] Decimal to binary conversion"
 subtitle:   "2to10"
 categories: dev
 tags: dev etc   
