@@ -9,7 +9,7 @@ order: 10
 
 Hi there! This is Shoveling Pig.  
 I'm studying **Computer Science** and **Business** at Seoul National Univ.  
-I'm a **ML Research Scientist** interested in **meta learning** and **transfer learning**.  
+I'm a **ML Research Scientist** interested in **computer vision** and **deep learning**.  
 Currently I'm looking for an opportunity to work as a skilled industrial personnel.
  
 * I'm interested in ML and MLOps.
