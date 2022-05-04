@@ -7,7 +7,7 @@ order: 10
 
 ## Introduction
 
-Hi there! This is Shoveling Pig.  
+Hello there! This is Shoveling Pig.  
 I'm studying **Computer Science** and **Business** at Seoul National Univ.  
 I'm a **Data Scientist** interested in **computer vision** and **deep learning**.  
 Currently I'm working as a skilled industrial personnel.
